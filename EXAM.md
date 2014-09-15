@@ -87,6 +87,21 @@ CSS compression means deleting all spaces in our styling code, in order to reduc
 
 ### 5. Explain the difference between position static, relative, absolute and fixed
 
+- static 
+Static is the default position value. The element flows normally in the page 
+
+- relative
+Relative position alows moving the element without affecting the position or behaviour of the other elements with the “left”, “top”, “bottom” or “right” attributes. If you don’t use that attributes, a relative positioned element actue like a static one.
+
+- absolute
+The page flow don’t take this element into account when organize all the elements position. Our element will be positioned in the top:0 and left:0 of his first relative positioned parent. You can (like in relative ones) change its absolute position with “top”, “bottom”, “left” or “right” attributes.
+
+- fixed
+When an element has “position:fixed”, it means that this element will be fixed in that position in the screen. The coordenates of its position, are set like in an absolute box, taking in count his first relatived positioned parent.
+If an element is fixed, it will be at the same position although the user makes scroll or moves the window.
+
+
+
 ### 6. What are data URIs? When would you use them?
 
 ### 7. Using jQuery...
