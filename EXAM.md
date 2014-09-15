@@ -104,6 +104,9 @@ If an element is fixed, it will be at the same position although the user makes 
 
 ### 6. What are data URIs? When would you use them?
 
+Data URI are used for embedding external images encoded in the CSS document avoiding external requests
+You should only use this in documents that are heavily cached, like your CSS should be. Having a CSS file that is 300k instead of 50k is fine if it saves 6 HTTP requests, but only if that CSS file is cached just as well as those images would be. Setting long expires on CSS files should help.
+
 ### 7. Using jQuery...
 
 * Add a 10px red border around all __IMG__ elements 
