@@ -61,6 +61,21 @@ img[src$=".gif] {
 
 ### 2. Pick any __IMG__ and __A__ element and replace them for any other element of your choice
 
+img.formato224x130 {
+	visibility: hidden;
+}
+img.formato224x130:before{
+	visibility:visible
+	content: 'TEXTEXTEXT';
+}
+a {
+	visibility: hidden;
+}
+a:before{
+	visibility:visible
+	content: 'This is new content, replacing existing content';
+}
+
 
 ### 3. What is CSS minification?
 
