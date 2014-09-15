@@ -108,6 +108,17 @@ Data URI are used for embedding external images encoded in the CSS document avoi
 You should only use this in documents that are heavily cached, like your CSS should be. Having a CSS file that is 300k instead of 50k is fine if it saves 6 HTTP requests, but only if that CSS file is cached just as well as those images would be. Setting long expires on CSS files should help.
 
 ### 7. Using jQuery...
+* Add a 10px red border around all __IMG__ elements 
+
+$("img").css("border","solid red 10px");
+
+* Fade out all __IMG__ elements
+
+$("img").fadeOut();
+
+* Add a 10px red border around all __IMG__ and fade out the images after 3 seconds
+
+$("img").css("border","solid red 10px").delay(3000).fadeOut();
 
 * Add a 10px red border around all __IMG__ elements 
 * Fade out all __IMG__ elements
