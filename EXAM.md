@@ -79,6 +79,8 @@ a:before{
 
 ### 3. What is CSS minification?
 
+a minified CSS is a css where have been removed all white spaces, and duplicate code has been re-organizated, in order to reduce server consumption. I normally use http://cssminifier.com
+
 ### 4. What is CSS compression?
 
 ### 5. Explain the difference between position static, relative, absolute and fixed
