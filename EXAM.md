@@ -83,6 +83,8 @@ a minified CSS is a css where have been removed all white spaces, and duplicate 
 
 ### 4. What is CSS compression?
 
+CSS compression means deleting all spaces in our styling code, in order to reduce its weights, but, unlike minification, there is no reorganization of our code (there are no deletions of duplicate code)
+
 ### 5. Explain the difference between position static, relative, absolute and fixed
 
 ### 6. What are data URIs? When would you use them?
