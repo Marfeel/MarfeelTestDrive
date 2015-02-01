@@ -130,6 +130,13 @@
 
 * Make top Ad banner sticky at the bottom
 
+	.header-bar{
+		position: fixed;
+		bottom: 0;
+		z-index: 1000;
+	}
+
+
 ### 3. DOM Manipulation with Javascript
 
 * Add a 10px red border around all __IMG__ elements 
