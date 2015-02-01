@@ -26,7 +26,8 @@
 	```
 	
 * Select only the __IMG__ elements that are inside an __A__ element
-
+	
+	```
 	var a = document.getElementsByTagName('a');
 	var imgInsideA =[];
 	var j=0;
@@ -41,13 +42,15 @@
 	}
 
 	console.log(imgInsideA);
+	```
 	
 * Select all elements with class _article_
 
-	document.getElementsByClassName('article');
+	``document.getElementsByClassName('article');``
 	
 * Select all _article_ from the middle and right column, but not from the left column
 	
+	```
 	var central = document.getElementsByClassName('centralblock');
 	var right = document.getElementsByClassName('rightblock');
 	var allArticles =[];
@@ -72,23 +75,29 @@
 	}
 
 	console.log(allArticles);
+	```
 
 * Select the 4th and 5th _article_ from the left column
 
+	```
 	var fourth = document.getElementsByClassName('leftblock')[0].getElementsByClassName('article')[3];
 	var fifth = document.getElementsByClassName('leftblock')[0].getElementsByClassName('article')[4];
 	
 	console.log(fourth);
 	console.log(fifth);
+	```
 
 * Select the logo of the website
-
+	
+	```
 	var logo = document.getElementsByTagName('img')[1];
 	
 	console.log(logo);
+	```
 	
 * Select all __IMG__ elements whose _SRC_ attribute is a _JPG_ file
 
+	```
 	var x=document.getElementsByTagName('img');
 	var tipus;
 	var j=0;
@@ -103,40 +112,51 @@
 	}
 
 	console.log(allJPG);
+	```
 
 ### 2. Apply CSS to DOM
 
 * Change the main article title to FF0000
-
+	
+	```
 	.front .title-box h2 a{
 		color: #FF0000;
 	}
+	```
 
 * Change page background color to green
-
+	
+	```
 	body{
 		background:#00ff00;
 	}
+	```
 
 * Change subtitles to lowercase
 
+	```
 	.subtitle{
 		text-transform: lowercase;
 	}
+	```
 
 * Hide opinion column
 
+	```
 	.opinion{
 		display:none;
 	}
+	```
 
 * Make top Ad banner sticky at the bottom
 
+	```
 	.header-bar{
 		position: fixed;
 		bottom: 0;
 		z-index: 1000;
 	}
+	```
 
 
 ### 3. DOM Manipulation with Javascript
