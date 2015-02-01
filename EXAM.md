@@ -1,12 +1,15 @@
 ### 1. Get DOM elements using Javascript selectors
 
 * Select an __IMG__ element
+
 	document.getElementsByTagName('img')[1];
 
 * Select all __H2__ elements
+
 	document.getElementsByTagName('h2');
 	
 * Select all __A__ elements that have the attribute _title_
+
 	var a= document.getElementsByTagName('a');
 	var j= 0;
 	var allTitles=[];
@@ -21,6 +24,7 @@
 	console.log(allTitles);
 	
 * Select only the __IMG__ elements that are inside an __A__ element
+
 	var a = document.getElementsByTagName('a');
 	var imgInsideA =[];
 	var j=0;
@@ -37,9 +41,36 @@
 	console.log(imgInsideA);
 	
 * Select all elements with class _article_
+
 	document.getElementsByClassName('article');
 	
 * Select all _article_ from the middle and right column, but not from the left column
+	
+	var central = document.getElementsByClassName('centralblock');
+	var right = document.getElementsByClassName('rightblock');
+	var allArticles =[];
+	var k=0;
+	var arts;
+	var j;
+
+	for (var i=0; i<central.length; i++){
+		arts = central[i].getElementsByClassName('article');
+		for(j=0; j<arts.length; j++){
+	  		allArticles[k]=arts[j];
+	  		k++;
+		}
+	}
+
+	for (var i=0; i<right.length; i++){
+		arts = right[i].getElementsByClassName('article');
+		for(j=0; j<arts.length; j++){
+		  allArticles[k]=arts[j];
+		  k++;
+		}
+	}
+
+	console.log(allArticles);
+
 * Select the 4th and 5th _article_ from the left column
 * Select the logo of the website
 * Select all __IMG__ elements whose _SRC_ attribute is a _JPG_ file
