@@ -37,6 +37,8 @@
 	console.log(imgInsideA);
 	
 * Select all elements with class _article_
+	document.getElementsByClassName('article');
+	
 * Select all _article_ from the middle and right column, but not from the left column
 * Select the 4th and 5th _article_ from the left column
 * Select the logo of the website
