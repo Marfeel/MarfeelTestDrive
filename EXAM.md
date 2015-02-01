@@ -163,13 +163,17 @@
 
 * Add a 10px red border around all __IMG__ elements 
 	
+	```
 	var img=document.getElementsByTagName('img');
 
 	for(var i=0; i<img.length; i++){
 		img[i].style.border="10px solid #FF0000";
 	}
+	```
 
 * Fade out all __IMG__ elements
+	
+	```
 	//this can also be done with css transforms although you asked pure JS so that's it
 
 	var img=document.getElementsByTagName('img');
@@ -189,9 +193,11 @@
 	for(var i=0; i<img.length; i++){
 		fadeOut(img[i]);
 	}
+	```
 
 * Add a 10px red border around all __IMG__ and fade out the images after 3 seconds
 
+	```
 	var img=document.getElementsByTagName('img');
 
 	for(var i=0; i<img.length; i++){
@@ -217,22 +223,27 @@
 	}
 
 	setTimeout(update, 3000);
+	```
 
 
 ### 4. Answer the following points
 
 * Justify the chosen method used to hide opinion column
-
+	
+	```
 	I used display:none; because it's the easiest step and using visibility:hidden; we get a blank space in the 	website which is not optimal for UX. If we need this content to still be accessible for screen readers 
 	I would use: 
+	
 	.position{
 		position: absolute;
 		top: -9999px;
 		left: -9999px;
 	}
+	```
 	
 * Explain the difference between position static, relative, absolute and fixed
 	
+	```
 	Static is de default position for any element. 
 	
 	Relative means that the element is relative to himself, so we can move it relatively to it's original position, 	relative is also useful to apply z-index.
@@ -240,27 +251,35 @@
 	Absolute allows us to put the element wherever we want but location settings are relative to it's parent 		element. Absolute elements are placed outside the flow of the page and it doesn't effect other elements. We can 	also use z-index for this kind of positioning.
 	
 	Fixed is positioned relative to the browser window.
+	```
 
 * What are data SRCs? When would you use them?
 	
+	```
 	src is used to load an element and tells you where the file is loaded from. To load an image for example.
 	data-src is an attribute without a predefined meaning that can be used, for example, in JavaScript to select a
 	given element.
+	```
 
 * What benefits you get by using a CSS preprocessor?
 	
-	The syntaxis is nested, you can define variables and mixins, you can use mathematical and operational functions
-	ad you can join multiple files. Mainly preprocessors aim to simplify CSS and add functionalities to it.
+	```
+	The syntaxis is nested, you can define variables and mixins, you can use mathematical and operational 		functions ad you can join multiple files. Mainly preprocessors aim to simplify CSS and add functionalities to it.
+	```
 
 * Why would you use unit testing?
-
+	
+	```
 	To identify problems at an early stage and plan your coding in a better way, to make changes easily and
 	identify issues rapidly, it's easy to find and undestand every unit's job and it allows you to improve the 		design without breaking it.
+	```
 
 * How would you accelerate an element by hardware and why?
 
+	```
 	In CSS I would do it with using the 3d space (translate3d), also using canvas elements. It's useful
 	in devices that have a graphical processing unit in order to help the CPU render graphical content.
+	```
 
 
 
