@@ -117,6 +117,11 @@
 	}
 
 * Change subtitles to lowercase
+
+	.subtitle{
+		text-transform: lowercase;
+	}
+
 * Hide opinion column
 * Make top Ad banner sticky at the bottom
 
