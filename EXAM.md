@@ -220,6 +220,10 @@
 	Fixed is positioned relative to the browser window.
 
 * What are data SRCs? When would you use them?
+	
+	src is used to load an element and tells you where the file is loaded from. To load an image for example.
+	data-src is an attribute without a predefined meaning that can be used, for example, in JavaScript to select a
+	given element.
 
 * What benefits you get by using a CSS preprocessor?
 
