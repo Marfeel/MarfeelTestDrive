@@ -2,14 +2,15 @@
 
 * Select an __IMG__ element
 
-	document.getElementsByTagName('img')[1];
+	``document.getElementsByTagName('img')[1];``
 
 * Select all __H2__ elements
 
-	document.getElementsByTagName('h2');
+	``document.getElementsByTagName('h2');``
 	
 * Select all __A__ elements that have the attribute _title_
 
+	```
 	var a= document.getElementsByTagName('a');
 	var j= 0;
 	var allTitles=[];
@@ -22,6 +23,7 @@
 	}
 
 	console.log(allTitles);
+	```
 	
 * Select only the __IMG__ elements that are inside an __A__ element
 
