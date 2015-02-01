@@ -148,6 +148,7 @@
 	}
 
 * Fade out all __IMG__ elements
+	//this can also be done with css transforms although you asked pure JS so that's it
 
 	var img=document.getElementsByTagName('img');
 
@@ -169,9 +170,44 @@
 
 * Add a 10px red border around all __IMG__ and fade out the images after 3 seconds
 
+	var img=document.getElementsByTagName('img');
+
+	for(var i=0; i<img.length; i++){
+		img[i].style.border="10px solid #FF0000";
+	}
+
+	function fadeOut(img){
+		img.style.opacity = 1;
+
+		(function fade() {
+			if ((img.style.opacity -= .05) < 0) {
+			img.style.display = "none";
+		} else {
+		requestAnimationFrame(fade);
+		}
+		})();
+	}
+
+	function update(){
+		for(var i=0; i<img.length; i++){
+			fadeOut(img[i]);
+		}
+	}
+
+	setTimeout(update, 3000);
+
+
 ### 4. Answer the following points
 
 * Justify the chosen method used to hide opinion column
+
+	I used display:none; because it's the easiest step and using visibility:hidden; we get a blank space in the 	website which is not optimal for UX. If we need this content to still be accessible for screen readers 
+	I would use: 
+	.position{
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
 	
 * Explain the difference between position static, relative, absolute and fixed
 
