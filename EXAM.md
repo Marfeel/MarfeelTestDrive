@@ -123,6 +123,11 @@
 	}
 
 * Hide opinion column
+
+	.opinion{
+		display:none;
+	}
+
 * Make top Ad banner sticky at the bottom
 
 ### 3. DOM Manipulation with Javascript
