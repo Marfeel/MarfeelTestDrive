@@ -111,6 +111,11 @@
 	}
 
 * Change page background color to green
+
+	body{
+		background:#00ff00;
+	}
+
 * Change subtitles to lowercase
 * Hide opinion column
 * Make top Ad banner sticky at the bottom
