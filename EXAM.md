@@ -147,8 +147,26 @@
 		img[i].style.border="10px solid #FF0000";
 	}
 
-
 * Fade out all __IMG__ elements
+
+	var img=document.getElementsByTagName('img');
+
+	function fadeOut(img){
+		img.style.opacity = 1;
+
+		(function fade() {
+			if ((img.style.opacity -= .05) < 0) {
+			img.style.display = "none";
+		} else {
+		requestAnimationFrame(fade);
+		}
+		})();
+	}
+
+	for(var i=0; i<img.length; i++){
+		fadeOut(img[i]);
+	}
+
 * Add a 10px red border around all __IMG__ and fade out the images after 3 seconds
 
 ### 4. Answer the following points
