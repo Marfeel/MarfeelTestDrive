@@ -210,6 +210,14 @@
 	}
 	
 * Explain the difference between position static, relative, absolute and fixed
+	
+	Static is de default position for any element. 
+	
+	Relative means that the element is relative to himself, so we can move it relatively to it's original position, 	relative is also useful to apply z-index.
+	
+	Absolute allows us to put the element wherever we want but location settings are relative to it's parent 		element. Absolute elements are placed outside the flow of the page and it doesn't effect other elements. We can 	also use z-index for this kind of positioning.
+	
+	Fixed is positioned relative to the browser window.
 
 * What are data SRCs? When would you use them?
 
