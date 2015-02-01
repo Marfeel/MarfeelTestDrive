@@ -73,14 +73,34 @@
 
 * Select the 4th and 5th _article_ from the left column
 
-	console.log(document.getElementsByClassName('leftblock')[0].getElementsByClassName('article')[3]);
-	console.log(document.getElementsByClassName('leftblock')[0].getElementsByClassName('article')[4]);
+	var fourth = document.getElementsByClassName('leftblock')[0].getElementsByClassName('article')[3];
+	var fifth = document.getElementsByClassName('leftblock')[0].getElementsByClassName('article')[4];
+	
+	console.log(fourth);
+	console.log(fifth);
 
 * Select the logo of the website
 
-	console.log(document.getElementsByTagName('img')[1]);
+	var logo = document.getElementsByTagName('img')[1];
+	
+	console.log(logo);
 	
 * Select all __IMG__ elements whose _SRC_ attribute is a _JPG_ file
+
+	var x=document.getElementsByTagName('img');
+	var tipus;
+	var j=0;
+	var allJPG=[];
+
+	for(var i=0; i<x.length; i++){
+		tipus = x[i].getAttribute('src');
+		if(tipus.match(/.jpg/)){
+			allJPG[j]=x[i];
+			j++;
+		}
+	}
+
+	console.log(allJPG);
 
 ### 2. Apply CSS to DOM
 
