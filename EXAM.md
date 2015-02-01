@@ -1,6 +1,8 @@
 ### 1. Get DOM elements using Javascript selectors
 
 * Select an __IMG__ element
+	document.getElementsByTagName('img')[1];
+
 * Select all __H2__ elements
 * Select all __A__ elements that have the attribute _title_
 * Select only the __IMG__ elements that are inside an __A__ element
@@ -27,7 +29,7 @@
 ### 4. Answer the following points
 
 * Justify the chosen method used to hide opinion column
-
+	
 * Explain the difference between position static, relative, absolute and fixed
 
 * What are data SRCs? When would you use them?
