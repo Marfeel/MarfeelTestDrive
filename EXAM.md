@@ -105,6 +105,11 @@
 ### 2. Apply CSS to DOM
 
 * Change the main article title to FF0000
+
+	.front .title-box h2 a{
+		color: #FF0000;
+	}
+
 * Change page background color to green
 * Change subtitles to lowercase
 * Hide opinion column
