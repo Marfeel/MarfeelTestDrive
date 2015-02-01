@@ -7,6 +7,19 @@
 	document.getElementsByTagName('h2');
 	
 * Select all __A__ elements that have the attribute _title_
+	var a= document.getElementsByTagName('a');
+	var j= 0;
+	var allTitles=[];
+
+	for(var i=0; i<a.length; i++){
+		if(a[i].hasAttribute('title')){
+	  		allTitles[j]=a[i];
+	  		j++;
+		}
+	}
+
+	allTitles;
+	
 * Select only the __IMG__ elements that are inside an __A__ element
 * Select all elements with class _article_
 * Select all _article_ from the middle and right column, but not from the left column
