@@ -77,6 +77,9 @@
 	console.log(document.getElementsByClassName('leftblock')[0].getElementsByClassName('article')[4]);
 
 * Select the logo of the website
+
+	console.log(document.getElementsByTagName('img')[1]);
+	
 * Select all __IMG__ elements whose _SRC_ attribute is a _JPG_ file
 
 ### 2. Apply CSS to DOM
