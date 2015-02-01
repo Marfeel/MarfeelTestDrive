@@ -18,9 +18,24 @@
 		}
 	}
 
-	allTitles;
+	console.log(allTitles);
 	
 * Select only the __IMG__ elements that are inside an __A__ element
+	var a = document.getElementsByTagName('a');
+	var imgInsideA =[];
+	var j=0;
+	var img;
+
+	for(var i=0; i<a.length; i++){
+		img = a[i].getElementsByTagName('img');
+		if (img.length>0){
+			imgInsideA[j]= img;
+			j++
+		}
+	}
+
+	console.log(imgInsideA);
+	
 * Select all elements with class _article_
 * Select all _article_ from the middle and right column, but not from the left column
 * Select the 4th and 5th _article_ from the left column
