@@ -226,10 +226,19 @@
 	given element.
 
 * What benefits you get by using a CSS preprocessor?
+	
+	The syntaxis is nested, you can define variables and mixins, you can use mathematical and operational functions
+	ad you can join multiple files. Mainly preprocessors aim to simplify CSS and add functionalities to it.
 
 * Why would you use unit testing?
 
+	To identify problems at an early stage and plan your coding in a better way, to make changes easily and
+	identify issues rapidly, it's easy to find and undestand every unit's job and it allows you to improve the 		design without breaking it.
+
 * How would you accelerate an element by hardware and why?
+
+	In CSS I would do it with using the 3d space (translate3d), also using canvas elements. It's useful
+	in devices that have a graphical processing unit in order to help the CPU render graphical content.
 
 
 
