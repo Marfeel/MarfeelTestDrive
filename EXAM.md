@@ -47,6 +47,11 @@ for(i = 0; i < src.length; i++){
 ### 2. Apply CSS to DOM
 
 * Change the main article title to FF0000
+```css
+.front .exclusive-info .title-box .title-exclusive-link {
+  color: #FF0000 !important;
+}
+```
 * Change page background color to green
 * Change subtitles to lowercase
 * Hide opinion column
