@@ -5,6 +5,9 @@
 document.getElementsByTagName('img')[0];
 ```
 * Select all __H2__ elements
+```js
+document.getElementsByTagName('h2');
+```
 * Select all __A__ elements that have the attribute _title_
 * Select only the __IMG__ elements that are inside an __A__ element
 * Select all elements with class _article_
