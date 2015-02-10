@@ -53,6 +53,11 @@ for(i = 0; i < src.length; i++){
 }
 ```
 * Change page background color to green
+```css
+body {
+  background-color: green;
+}
+```
 * Change subtitles to lowercase
 * Hide opinion column
 * Make top Ad banner sticky at the bottom
