@@ -13,6 +13,9 @@ document.getElementsByTagName('h2');
 document.querySelectorAll('a[title]');
 ```
 * Select only the __IMG__ elements that are inside an __A__ element
+```js
+document.querySelectorAll('a img');
+```
 * Select all elements with class _article_
 * Select all _article_ from the middle and right column, but not from the left column
 * Select the 4th and 5th _article_ from the left column
