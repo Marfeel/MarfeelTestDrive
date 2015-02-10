@@ -21,6 +21,10 @@ document.querySelectorAll('a img');
 document.getElementsByClassName('article');
 ```
 * Select all _article_ from the middle and right column, but not from the left column
+```js
+document.querySelectorAll('.centralblock article');
+document.querySelectorAll('.rightblock article');
+```
 * Select the 4th and 5th _article_ from the left column
 * Select the logo of the website
 * Select all __IMG__ elements whose _SRC_ attribute is a _JPG_ file
