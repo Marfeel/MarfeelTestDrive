@@ -71,6 +71,13 @@ span.subtitle{
 }
 ```
 * Make top Ad banner sticky at the bottom
+```css
+.front .header-bar {
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+}
+```
 
 ### 3. DOM Manipulation with Javascript
 
