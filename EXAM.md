@@ -35,6 +35,14 @@ document.querySelectorAll('.leftblock article')[4];
 document.getElementsByClassName('img-header-logo');
 ```
 * Select all __IMG__ elements whose _SRC_ attribute is a _JPG_ file
+```js
+var src = document.querySelectorAll('img');
+for(i = 0; i < src.length; i++){
+  var imgSrc = src[i].src;
+  var img = imgSrc.match(/.jpg/) || !null;
+  console.log(img);
+}
+```
 
 ### 2. Apply CSS to DOM
 
