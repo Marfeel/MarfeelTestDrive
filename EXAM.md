@@ -1,6 +1,9 @@
 ### 1. Get DOM elements using Javascript selectors
 
 * Select an __IMG__ element
+```js
+document.getElementsByTagName('img')[0];
+```
 * Select all __H2__ elements
 * Select all __A__ elements that have the attribute _title_
 * Select only the __IMG__ elements that are inside an __A__ element
