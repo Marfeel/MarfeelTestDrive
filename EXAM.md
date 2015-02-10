@@ -31,6 +31,9 @@ document.querySelectorAll('.leftblock article')[3];
 document.querySelectorAll('.leftblock article')[4];
 ```
 * Select the logo of the website
+```js
+document.getElementsByClassName('img-header-logo');
+```
 * Select all __IMG__ elements whose _SRC_ attribute is a _JPG_ file
 
 ### 2. Apply CSS to DOM
