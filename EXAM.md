@@ -200,5 +200,8 @@ and
 
 * How would you accelerate an element by hardware and why?
 
+> Teamtree exaplains is very well and who really wants to read more about hardware acceleration when using CSS animations, transforms and transitions, can found it [here](http://blog.teamtreehouse.com/increase-your-sites-performance-with-hardware-accelerated-css).
 
+> In conclusion:
+Elements can be used by hardware acceleration to improve performance, such on 2D transforms. Also using the GPU unnecessarily can cause significant performance issues because it increases memory use –– it will also affect the battery life on mobile devices.
 
