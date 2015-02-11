@@ -139,6 +139,7 @@ Can check for more info, here:
 [stackoverflow](http://stackoverflow.com/questions/3475119/css-properties-display-vs-visibility)
 
 * Explain the difference between position static, relative, absolute and fixed
+
 **static**
 
 > The ```position: static``` is the default position used on all elements. The only reason you would ever set an element to ```position: static``` is to forcefully-remove some positioning that got applied to an element outside of your control. 
@@ -159,6 +160,15 @@ The most important thing to remember, about absolute positioning is that these e
 > More info and a good online site to learn CSS positioning ca be found [here](http://www.barelyfitz.com/screencast/html-training/css/positioning/).
 
 * What are data SRCs? When would you use them?
+
+> The data-src attribute is just one of the infinite set of data-* attributes, which have no defined meaning but can be used to include invisible data in an element, for use in scripting (or styling).
+More info [here](http://html5doctor.com/html5-custom-data-attributes/) and [here](http://css-tricks.com/data-uris/)
+The format it uses: 
+```data:[<mime type>][;charset=<charset>][;base64],<encoded data>```
+```<img src="data:image/png;base64,iVBOR..." />```
+> Why to use it?
+This way the image in inlined in the HTML and there is no extra HTTP request to retrieve it (other than scrpting or styling).
+
 
 * What benefits you get by using a CSS preprocessor?
 
