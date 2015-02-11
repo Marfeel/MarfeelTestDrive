@@ -172,7 +172,31 @@ This way the image in inlined in the HTML and there is no extra HTTP request to 
 
 * What benefits you get by using a CSS preprocessor?
 
+> A preprocessor allows additional leverage over CSS by providing additional syntax that delivers the following advantages:
+
+1. Nested syntax
+2. Ability to define variables
+3. Ability to define mixins
+4. Mathematical functions
+5. Operational functions (such as “lighten” and “darken”).
+6. Loops, conditionals
+7. Joining of multiple files
+8. Etc.
+
+More info [here](http://blog.blakesimpson.co.uk/read/37-less-sass-the-advantages-of-css-preprocessing-explained) and [here](http://css-tricks.com/musings-on-preprocessing/)
+
 * Why would you use unit testing?
+
+> Every person can give his/her opinion (more sceptic or less) and also I can write tones of lines describing the benefits and non-benefits of unit testing (TDD), unfortunately I don't got (right now) plenty of time so I will post some links that talks very well about this topic. I had founded on stackoverflow, this sentence that describes it very well, with just a few lines/words.
+I may also mention that all the tests I did before, where on Ruby (RSpec).
+
+> `Man, I just love unit tests, I've just been able to make a bunch of changes to the way something works, and then was able to confirm I hadn't broken anything by running the test over it again...`
+
+> More info:
+[here](http://soundsoftware.ac.uk/unit-testing-why-bother/)
+[here](http://stackoverflow.com/questions/67299/is-unit-testing-worth-the-effort)
+and
+[here](http://programmers.stackexchange.com/questions/88365/do-you-use-unit-tests-at-work-what-benefits-do-you-get-from-them)
 
 * How would you accelerate an element by hardware and why?
 
