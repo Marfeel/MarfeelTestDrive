@@ -134,6 +134,10 @@ setTimeout('initiate()', 3000);
 
 * Justify the chosen method used to hide opinion column
 
+> I preferred to use ```display: none``` attribute as it completly "removes" the elemente from the page, letting the adjacent element ocuppie his space. Do so, ```visibility: hidden``` can also be use. The main difference between these two is that the attribute "visibility", mantains the space of the focused element, so the adjacent elements stays on their spots. 
+Can check for more info, here: 
+[stackoverflow](http://stackoverflow.com/questions/3475119/css-properties-display-vs-visibility)
+
 * Explain the difference between position static, relative, absolute and fixed
 
 * What are data SRCs? When would you use them?
