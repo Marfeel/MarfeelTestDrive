@@ -106,8 +106,29 @@ function initiate(){
   setTimeout("fadeOut()", 80);
 }
 initiate();
-		```
+```
 * Add a 10px red border around all __IMG__ and fade out the images after 3 seconds
+```js
+var img = document.getElementsByTagName('img');
+for(var i=0; i<img.length; i++){
+	img[i].style.border="10px solid red";
+}
+var opacity = 1;
+function fadeOut(){
+	for(var i=0; i<img.length; i++){
+		img[i].style.opacity = opacity;
+		//console.log(img[i].style.opacity);
+	}
+	if(opacity > 0){
+		initiate();
+  }
+}
+function initiate(){
+	opacity -= 0.2;
+	setTimeout("fadeOut()", 80);
+}
+setTimeout('initiate()', 3000);
+```
 
 ### 4. Answer the following points
 
