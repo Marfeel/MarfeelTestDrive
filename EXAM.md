@@ -139,6 +139,24 @@ Can check for more info, here:
 [stackoverflow](http://stackoverflow.com/questions/3475119/css-properties-display-vs-visibility)
 
 * Explain the difference between position static, relative, absolute and fixed
+**static**
+
+> The ```position: static``` is the default position used on all elements. The only reason you would ever set an element to ```position: static``` is to forcefully-remove some positioning that got applied to an element outside of your control. 
+
+**relative**
+
+> This type of positioning is probably the most confusing and misused. What it really means is "relative to itself". If you set ```position: relative``` on an element but no other positioning attributes (top, left, bottom or right), it will no effect on it's positioning at all, it will be exactly as it would be if you left it as ```position: static``` But if you DO give it some other positioning attribute, say, top: 10px;, it will shift it's position 10 pixels DOWN from where it would NORMALLY be. There are **two** other things that happen when you set ```position: relative``` on an element that you should be aware of. _One_ is that it introduces the ability to use ```z-index``` on that element, which doesn't really work with statically positioned elements. _TheOther_ thing that happens is it limits the scope of absolutely positioned child elements. Any element that is a child of the relatively positioned element can be absolutely positioned within that block. This brings up some powerful opportunities to style the document.
+
+**absolute**
+
+>  This is a very powerful type of positioning that allows you to literally place any page element exactly where you want it. You use the positioning attributes top, left bottom and right to set the location. Remember that these values will be relative to the next parent element with relative (or absolute) positioning. If there is no such parent, it will default all the way back up to the <html> element itself meaning it will be placed relatively to the page itself.
+The most important thing to remember, about absolute positioning is that these elements are removed from the flow of elements on the page. An element with this type of positioning is not affected by other elements and it doesn't affect other elements. This is a serious thing to consider every time you use ```position: absolute```. It's overuse or improper use can limit the flexibility of your site.
+
+**fixed**
+
+> This type of positioning is fairly rare but certainly has its uses. A ```position: fixed``` element is positioned relative to the viewport, or the browser window itself. The viewport doesn't change when the window is scrolled, so a fixed positioned element will stay right where it is when the page is scrolled, creating an effect a bit like the old school "frames" days. It makes a cool effect, can be useful, but needs to be thoroughly tested.
+
+> More info and a good online site to learn CSS positioning ca be found [here](http://www.barelyfitz.com/screencast/html-training/css/positioning/).
 
 * What are data SRCs? When would you use them?
 
