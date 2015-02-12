@@ -46,7 +46,7 @@ for(i = 0; i < src.length; i++){
 
 * Update 1 - Thanks to @gerardcobas* - Select all __IMG__ elements whose _SRC_ attribute is a _JPG_ file
 ```js
-var img = document.querySelectorAll('img[src*="jpg"]');
+var img = document.querySelectorAll('img[src*=".jpg"]');
 ```
 
 ### 2. Apply CSS to DOM
