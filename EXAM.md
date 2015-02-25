@@ -12,16 +12,16 @@
 * Select all __A__ elements that have the attribute _title_
 
 >I take all the a elements into the array 'links'
->>links = document.getElementsByTagName('a')
+>>var links = document.getElementsByTagName('a')
 
 >I create an empty array 'titleLinks' to store __A__ elements with _title_
->>titleLinks = []
+>>var titleLinks = []
 
->I define a function to iterate 'links' array and store _A_ elements with attribute _title_ in 'titleLinks'
+>I define a function to iterate 'links' array and store __A__ elements with attribute _title_ in 'titleLinks'
 >>function select_a_with_title(){    
->>i=0;    
+>>var i=0;    
 >>while(i < links.length){    
->>if(links[i].hasAttribute('title') == true){    
+>>if(links[i].hasAttribute('title') === true){    
 >>titleLinks.push(links[i]);    
 >>};    
 >>i++;   
@@ -34,6 +34,27 @@
 >Now titleLinks stores all the __A__ elements with attribute _title_
 
 * Select only the __IMG__ elements that are inside an __A__ element
+
+>I select __IMG__ elements and keep the in 'imgs' variable
+>>var imgs = document.getElementsByTagName('img')
+
+>I create the 'a_imgs' empty array
+>>var a_imgs = []; 
+
+>I declare a function called 'select_imgs_in_a' to store all __IMG__ in the document with a parent __A__   
+>>function select_imgs_in_a(){    
+>>for(i=0;i<imgs.length;i++){    
+>>if(imgs[i].parentNode.nodeName === 'A'){    
+>>a_imgs.push(imgs[i]);    
+>>};    
+>>};    
+>>};    
+
+>I call the function 'select_imgs_in_a'
+>>select_imgs_in_a();
+
+>Now a_imgs stores all the __IMG__ elements with attribute _title_
+
 * Select all elements with class _article_
 * Select all _article_ from the middle and right column, but not from the left column
 * Select the 4th and 5th _article_ from the left column
