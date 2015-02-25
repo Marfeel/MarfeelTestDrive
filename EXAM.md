@@ -56,6 +56,10 @@
 >Now a_imgs stores all the __IMG__ elements with attribute _title_
 
 * Select all elements with class _article_
+
+>>document.getElementsByClassName('article')
+>This returns an empty array so there are not elements with class _article_
+
 * Select all _article_ from the middle and right column, but not from the left column
 * Select the 4th and 5th _article_ from the left column
 * Select the logo of the website
