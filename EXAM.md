@@ -2,7 +2,7 @@
 
 * Select an __IMG__ element
 
->I take the second image of the HTML collection:
+>I take the third image of the HTML collection:
 >>document.getElementsByTagName('img')[2]
 
 * Select all __H2__ elements
@@ -10,6 +10,29 @@
 >>document.getElementsByTagName('h2')
 
 * Select all __A__ elements that have the attribute _title_
+
+>I take all the a elements into the array 'links'
+>>links = document.getElementsByTagName('a')
+
+>I create an empty array 'titleLinks' to store __A__ elements with _title_
+>>titleLinks = []
+
+>I define a function to iterate 'links' array and store _A_ elements with attribute _title_ in 'titleLinks'
+>>function select_a_with_title(){    
+>>i=0;    
+>>while(i < links.length){    
+>>if(links[i].hasAttribute('title') == true){    
+>>titleLinks.push(links[i]);    
+>>};    
+>>i++;   
+}    
+}
+
+>I call 'select_a_with_title'
+>>select_a_with_title()
+
+>Now titleLinks stores all the __A__ elements with attribute _title_
+
 * Select only the __IMG__ elements that are inside an __A__ element
 * Select all elements with class _article_
 * Select all _article_ from the middle and right column, but not from the left column
