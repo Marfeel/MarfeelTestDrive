@@ -92,24 +92,60 @@
 >>  };    
 >>};    
 
->>take_articles();      
+>>take_articles();    
+
+>>center_and_right_articles;          
 
 * Select the 4th and 5th _article_ from the left column
 
->>left_section = document.getElementsByClassName('opening-1-left')[0];
+>>left_section = document.getElementsByClassName('opening-1-left')[0];    
 
->>left_section.childNodes[0].childNodes[3];
->>left_section.childNodes[0].childNodes[4];
+>>left_section.childNodes[0].childNodes[3];    
+>>left_section.childNodes[0].childNodes[4];    
 
 * Select the logo of the website
 
->>
+>>divs = document.getElementsByTagName('div');    
+
+>>var logo_elements = [];    
+
+>>function search_in_class(elements, word){    
+>>for(var i=0; i<elements.length; i++){    
+>>  	if((elements[i].className.search(word) === -1) === false){    
+>>  		logo_elements.push(elements[i])    
+>>  	};    
+>>  };    
+>>};    
+
+>>search_in_class(divs, 'logo');    
+
+>>logo_elements[1];    
 
 * Select all __IMG__ elements whose _SRC_ attribute is a _JPG_ file
+
+>>var imgs = document.getElementsByTagName('img');     
+
+>>var jpg_imgs=[];    
+
+>>function search_in_src(word){    
+>>	for(i=0;i<imgs.length;i++){    
+>>		if ((imgs[i].getAttribute('src').search(word) === -1) === false){    
+>>      jpg_imgs.push(imgs[i]);    
+>>		};    
+>>	};    
+>>};     
+
+>>search_in_src('.jpg');   
+ 
+>>jpg_imgs;    
+
 
 ### 2. Apply CSS to DOM
 
 * Change the main article title to FF0000
+
+>>
+
 * Change page background color to green
 * Change subtitles to lowercase
 * Hide opinion column
