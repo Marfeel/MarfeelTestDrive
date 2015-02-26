@@ -144,10 +144,16 @@
 
 * Change the main article title to FF0000
 
->>
+>>document.getElementsByClassName('art-tit')[0].childNodes[0].textContent = "FF0000";    
 
 * Change page background color to green
+
+>>document.getElementsByTagName('body')[0].setAttribute('style','background-color:green;');    
+
 * Change subtitles to lowercase
+
+>>
+
 * Hide opinion column
 * Make top Ad banner sticky at the bottom
 
