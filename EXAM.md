@@ -152,7 +152,26 @@
 
 * Change subtitles to lowercase
 
->>
+>I do not get this code working properly. I get an error because one article does not have sibling and _nextSibling =! null_ doesn't work as I expected. I will keep trying.
+
+>>var articles = document.getElementsByTagName('article');     
+
+>>function article_subtitles_tolowercase(){     
+>>  for(var i=0; i<articles.length; i++){     
+>>  	h3s = articles[i].getElementsByTagName('h3');     
+>>    for(var j=0; j<(h3s.length);j++){     
+>>      if(h3s[j].nextSibling =! null){    
+>>      	subtitle = h3s[j].nextSibling;    
+>>        if(subtitle.hasOwnProperty('textContent')){    
+>>            textContent = subtitle.textContent;    
+>>            textContent = textContent.toLowerCase();     
+>>        };    
+>>      };    
+>>    };    	   
+>>  };    
+>>};    
+
+>>article_subtitles_tolowercase();    
 
 * Hide opinion column
 
