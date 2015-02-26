@@ -62,44 +62,49 @@
 
 * Select all _article_ from the middle and right column, but not from the left column
 
->>var divs = document.getElementsByTagName('div');
-var sections = document.getElementsByTagName('section');
+>>var divs = document.getElementsByTagName('div');    
+>>var sections = document.getElementsByTagName('section');    
 
-var center_or_right_containers = [];
+>>var center_or_right_containers = [];    
 
-function search_in_class(element, word){  
-  for(var i=0; i<element.length; i++){
-  	if((element[i].className.search(word) === -1) === false){
-  		center_or_right_containers.push(element[i])
-  	};
-  };
-};
+>>function search_in_class(element, word){      
+>>  for(var i=0; i<element.length; i++){    
+>>  	if((element[i].className.search(word) === -1) === false){    
+>> 		center_or_right_containers.push(element[i])    
+>>  	};    
+>>  };    
+>>};    
 
-search_in_class(sections,'right');
-search_in_class(sections,'center');
-search_in_class(divs,'aside');
+>>search_in_class(sections,'right');    
+>>search_in_class(sections,'center');    
+>>search_in_class(divs,'aside');    
 
-var center_and_right_articles = []
+>>var center_and_right_articles = [];    
 
-function take_articles(){
-	for(var i=0; i<center_or_right_containers.length; i++){
-		var all_childs = center_or_right_containers[i].getElementsByTagName("*");
-    for(var j=0; j<all_childs.length; j++){
-    	if(all_childs[j].nodeName === 'ARTICLE'){
-    		center_and_right_articles.push(all_childs[j]);
-    	};
-    };
-  };
-};
+>>function take_articles(){    
+>>	for(var i=0; i<center_or_right_containers.length; i++){    
+>>		var all_childs = center_or_right_containers[i].getElementsByTagName("*");    
+>>    for(var j=0; j<all_childs.length; j++){    
+>>    	if(all_childs[j].nodeName === 'ARTICLE'){    
+>>    		center_and_right_articles.push(all_childs[j]);    
+>>    	};    
+>>    };    
+>>  };    
+>>};    
 
-
-take_articles();  
+>>take_articles();      
 
 * Select the 4th and 5th _article_ from the left column
 
->>
+>>left_section = document.getElementsByClassName('opening-1-left')[0];
+
+>>left_section.childNodes[0].childNodes[3];
+>>left_section.childNodes[0].childNodes[4];
 
 * Select the logo of the website
+
+>>
+
 * Select all __IMG__ elements whose _SRC_ attribute is a _JPG_ file
 
 ### 2. Apply CSS to DOM
