@@ -155,7 +155,21 @@
 >>
 
 * Hide opinion column
+
+>>var opinion_column = document.getElementsByClassName('opening-1-right-bottom-right')[0];    
+
+>>opinion_column.setAttribute('style','visibility:hidden;');    
+
+
 * Make top Ad banner sticky at the bottom
+
+>>var body = document.getElementsByTagName('body')[0];    
+
+>>body.setAttribute('style', 'position:relative;');    
+
+>>var add_banner = document.getElementById('dfp-home-site');    
+
+>>add_banner.setAttribute('style', 'position:absolute; bottom:-80rem'); //It should be enough with bottom:0rem; but the banner doesn't go to the right bottom.    
 
 ### 3. DOM Manipulation with Javascript
 
