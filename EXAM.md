@@ -262,11 +262,11 @@
 
 * Why would you use unit testing?
 
-I have used RSpec in Ruby on Rails apps and it is a very good way to test the code in different situations to know when it can breaks.
+>I have used RSpec in Ruby on Rails apps and it is a very good way to test the code in different situations to know when it can breaks.
 
 * How would you accelerate an element by hardware and why?
 
-I would use transform: translateZ(0) to improve the performance when a CSS animation is loaded, for example. Today most computers, smartphones, tablets, etc, have cards or components for hardware acceleration. However, I would use methods to enable graphic acceleration only on spicific animations in order to not use excesive ram.
+>I would use transform: translateZ(0) to improve the performance when a CSS animation is loaded, for example. Today most computers, smartphones, tablets, etc, have cards or components for hardware acceleration. However, I would use methods to enable graphic acceleration only on spicific animations in order to not use excesive ram.
 
 
 
