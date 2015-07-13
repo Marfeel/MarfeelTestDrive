@@ -111,6 +111,25 @@
 	}
 	```
 * Fade out all __IMG__ elements
+	```
+	var imgs = document.getElementsByTagName("IMG");
+	for(var i = 0; i<imgs.length; i++){
+		fade(imgs[i]);
+	}
+		
+	function fade(el){
+		var op = 1;  // initial opacity
+		var timer = setInterval(function () {
+			if (op <= 0.1){
+				clearInterval(timer);
+				el.style.display = 'none';
+			}
+			el.style.opacity = op;
+			el.style.filter = 'alpha(opacity=' + op * 100 + ")";
+			op -= op * 0.1;
+		}, 50);
+	}
+	```
 * Add a 10px red border around all __IMG__ and fade out the images after 3 seconds
 
 ### 4. Answer the following points
