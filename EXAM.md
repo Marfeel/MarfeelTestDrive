@@ -54,7 +54,7 @@
 	```
 	var h = document.getElementsByTagName('*');
 	for(var i = 0; i<h.length; i++){
-		h[0].style.backgroundColor="green";
+		h[i].style.backgroundColor="green";
 	}
 	```
 * Change subtitles to lowercase
