@@ -3,12 +3,13 @@
 * Select an __IMG__ element
 	```var img = document.getElementsByTagName("IMG")[0]; console.log(img);```
 * Select all __H2__ elements
-        ```
-        var h2 = document.getElementsByTagName("H2");
+	```
+	var h2 = document.getElementsByTagName("H2");
 	for(var i = 0; i<h2.length; i++){
 		console.log(h2[i]);
 	}
 	```
+	
 * Select all __A__ elements that have the attribute _title_
 	```
 	var a = document.getElementsByTagName("A");
