@@ -53,7 +53,9 @@
 * Change page background color to green
 	```
 	var h = document.getElementsByTagName('*');
-	h[0].style.backgroundColor="green";
+	for(var i = 0; i<h.length; i++){
+		h[0].style.backgroundColor="green";
+	}
 	```
 * Change subtitles to lowercase
 * Hide opinion column
