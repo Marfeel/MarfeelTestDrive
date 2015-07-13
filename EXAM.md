@@ -267,19 +267,47 @@ And the same as before:
         
     document.getElementsByTagName("head")[0].appendChild(style);
 
+
 ### 4. Answer the following points
 
 * Justify the chosen method used to hide opinion column
 
+Well, I've already stated some of the methods. I could also have used ```opacity: 0```, move the _div_ 100000px to the right, and a thousand others.
+
+The big difference between hiding them and making them disappear, is to maintain or not the blank space.
+
+
+
 * Explain the difference between position static, relative, absolute and fixed
+
+[Here](https://developer.mozilla.org/en-US/docs/Web/CSS/position#Values) are the definitions, and also examples, usages, links to the specification...
+
+A good developer must know when to reuse another ones work - that's why libraries exist! - . I would never explain it well enough.
 
 * What are data SRCs? When would you use them?
 
+I can't understand the context of this, so I really don't know what they are.
+
+Are you refering to data sources as in the source of the data in an async app? If so, I would use them in a miriad of cases. From a situation when we have to load tons of data (so we don't keep the user waiting while loading), to times when we have to connect to a DB, or the most common in interactive apps (in webapps via JS would be AJAX), to update its information when new daa is available. Any app that has to update will need a data source.
+ 
+ If you are refering to a ```data-src``` attribute that you can sometimes see in some tags, it's just one of the ```data-``` [attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*) accessible by ```element.dataset```. Combined with the previous paragraph, if an element has an attribute ```data-src="api.example.com"```, it's probably to get this direction via js (```element.dataset.src```) and update itself with the data downloaded from there.
+
 * What benefits you get by using a CSS preprocessor?
+
+Depends on the preprocessor, but mostly ease of use.
+
+CSS preprocessors provide functionalities not present in vanilla CSS. Just look at [Sass](http://sass-lang.com/guide) or [less](http://lesscss.org/features/) to get an idea.
 
 * Why would you use unit testing?
 
+To test my code for errors. I could talk on and on and on about the advantages and disadvantages of testing, testing techniques, testing frameworks, ... But it's not the moment.
+
 * How would you accelerate an element by hardware and why?
 
+I have never thought about manually accelerate elements by hardware. Most JS engines work a little by magic, and the best thing is to use the most optimal algorithms (learn your "big O"s!), and set everything where it belongs (animations and styles in the CSS, logic in the JS, presentation in the HTML). That's the best way to accelerate. 
 
+Don't write blocking JS. Don't navigate the DOM (as far as you can). All this basic stuff can just be avioded with good practices, but it's not actual hardware acceleration.
 
+I've read somewhere that new js engines are capable of parallelizing js, as long as it's written properly (there are some specific techniques to develop for parallelized processing), and I think the _canvas_ element can be hardware accelerated. But it's only worth the effort for apps extremely heavy on processing (games and the like), but for a regular webapp it's not worth the effort (the bottleneck it's probably somewhere else, not in the hardware acceleration).
+
+If I ever have to accelerate JS via hardware, I'll have to learn this ability.
