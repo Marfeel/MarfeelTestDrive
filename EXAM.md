@@ -1,7 +1,9 @@
 ### 1. Get DOM elements using Javascript selectors
 
 * Select an __IMG__ element
-	```var img = document.getElementsByTagName("IMG")[0]; console.log(img);```
+	```
+	var img = document.getElementsByTagName("IMG")[0]; console.log(img);
+	```
 * Select all __H2__ elements
 	```
 	var h2 = document.getElementsByTagName("H2");
@@ -39,6 +41,13 @@
 	}
  	```
 * Select all elements with class _article_
+	```
+	var articles = document.getElementsByClassName("article");
+	
+	for(var i = 0; i<articles.length; i++){
+		console.log(articles[i]);
+	}
+	```
 * Select all _article_ from the middle and right column, but not from the left column
 * Select the 4th and 5th _article_ from the left column
 * Select the logo of the website
