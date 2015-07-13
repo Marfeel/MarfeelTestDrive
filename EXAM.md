@@ -64,6 +64,11 @@
 	c[0].style.display="none";
 	```
 * Make top Ad banner sticky at the bottom
+	```
+	var ad = document.getElementsByClassName("hide-ad");
+	ad[0].style.position='absolute';
+	ad[0].style.bottom='0px';
+	```
 
 ### 3. DOM Manipulation with Javascript
 
