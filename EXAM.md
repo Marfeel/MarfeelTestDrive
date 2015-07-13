@@ -2,14 +2,11 @@
 
 * Select an __IMG__ element
 	```
-	var img = document.getElementsByTagName("IMG")[0]; console.log(img);
+	var img = document.getElementsByTagName("IMG")[0];
 	```
 * Select all __H2__ elements
 	```
 	var h2 = document.getElementsByTagName("H2");
-	for(var i = 0; i<h2.length; i++){
-		console.log(h2[i]);
-	}
 	```
 	
 * Select all __A__ elements that have the attribute _title_
@@ -20,9 +17,6 @@
 		 if (a[i].getAttribute('title') !== null){
 			matchingResults.push(a[i]);
 		}
-	}
-	for(var i = 0; i<matchingResults.length; i++){
-		console.log(matchingResults[i]);
 	}
 	```
 * Select only the __IMG__ elements that are inside an __A__ element
@@ -35,26 +29,16 @@
 			imgs.push(a[i].getElementsByTagName("IMG"));
 		}
 	}
-	
-	for(var i = 0; i<imgs.length; i++){
-		console.log(imgs[i][0]);
-	}
  	```
 * Select all elements with class _article_
 	```
 	var articles = document.getElementsByClassName("article");
-	
-	for(var i = 0; i<articles.length; i++){
-		console.log(articles[i]);
-	}
 	```
 * Select all _article_ from the middle and right column, but not from the left column
 * Select the 4th and 5th _article_ from the left column
 * Select the logo of the website
 	```
 	var logo = document.getElementsByClassName("header-logo-h");
-	
-	console.log(logo[0]);
 	```
 * Select all __IMG__ elements whose _SRC_ attribute is a _JPG_ file
 
