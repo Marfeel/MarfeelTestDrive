@@ -45,6 +45,11 @@
 ### 2. Apply CSS to DOM
 
 * Change the main article title to FF0000
+	```
+	var h3 = document.getElementsByClassName("fs-86");
+	var title = h3[0].getElementsByTagName("A");
+	title[0].style.color="#FF0000";
+	```
 * Change page background color to green
 * Change subtitles to lowercase
 * Hide opinion column
