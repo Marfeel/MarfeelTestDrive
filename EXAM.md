@@ -51,6 +51,11 @@
 * Select all _article_ from the middle and right column, but not from the left column
 * Select the 4th and 5th _article_ from the left column
 * Select the logo of the website
+	```
+	var logo = document.getElementsByClassName("header-logo-h");
+	
+	console.log(logo[0]);
+	```
 * Select all __IMG__ elements whose _SRC_ attribute is a _JPG_ file
 
 ### 2. Apply CSS to DOM
