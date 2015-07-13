@@ -74,6 +74,17 @@
 	}
 	```
 * Change subtitles to lowercase
+	```
+	var h = document.getElementsByTagName('*');
+	
+	for(var i = 0; i<h.length; i++){
+		if(h[i].getAttribute('subtitle') !== null){
+			var s = h[i].innerHTML.toLowerCase();
+			h[i].innerHTML=s; 
+			h[i].style.textTransform="none";
+		}
+	}
+	```
 * Hide opinion column
 	```
 	var c = document.getElementsByClassName("f141");
