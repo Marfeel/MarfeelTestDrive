@@ -92,9 +92,9 @@
 
 ### 4. Answer the following points
 
-* Justify the chosen method used to hide opinion column
+* Justify the chosen method used to hide opinion column : The attribute display allows us to change an item visibility, making it appear or not on the HTML document after applying our JS file.
 
-* Explain the difference between position static, relative, absolute and fixed
+* Explain the difference between position static, relative, absolute and fixed : __Static__: Is the predetermined position which browsers use. __Relative__: Positioning a box according to the static position and then move it from their original position. __Absolute__: The position is established absolutely regarding its container element, and the other elements of the page ignore the new position of the element. __Fixed__: Absolute positioning variant that turns a box into an immovable element; its position on the screen it's always the same.
 
 * What are data SRCs? When would you use them?
 
