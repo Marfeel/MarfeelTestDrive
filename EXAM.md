@@ -42,6 +42,22 @@
 	var logo = document.getElementsByClassName("header-logo-h");
 	```
 * Select all __IMG__ elements whose _SRC_ attribute is a _JPG_ file
+	```
+	var a = document.getElementsByTagName("IMG");
+	var matchingResults = [];
+	
+	for(var i = 0; i<a.length; i++){
+		if (a[i].getAttribute('src') !== null){
+			if(a[i].getAttribute('src').indexOf(".jpg")>-1){
+				matchingResults.push(a[i]);
+			}
+		}
+	}
+	
+	for(var i = 0; i<matchingResults.length; i++){
+		console.log(matchingResults[i]);
+	}
+	```
 
 ### 2. Apply CSS to DOM
 
