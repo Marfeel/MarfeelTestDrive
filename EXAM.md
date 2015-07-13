@@ -73,6 +73,13 @@
 ### 3. DOM Manipulation with Javascript
 
 * Add a 10px red border around all __IMG__ elements 
+	```
+	var imgs = document.getElementsByTagName("IMG");
+	
+	for(var i = 0; i<imgs.length; i++){
+		imgs[i].style.border="10px solid red";
+	}
+	```
 * Fade out all __IMG__ elements
 * Add a 10px red border around all __IMG__ and fade out the images after 3 seconds
 
