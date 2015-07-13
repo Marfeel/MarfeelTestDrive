@@ -13,6 +13,7 @@
 	```
 	var a = document.getElementsByTagName("A");
 	var matchingResults = [];
+	
 	for(var i = 0; i<a.length; i++){
 		 if (a[i].getAttribute('title') !== null){
 			matchingResults.push(a[i]);
@@ -47,12 +48,15 @@
 * Change the main article title to FF0000
 	```
 	var h3 = document.getElementsByClassName("fs-86");
+	
 	var title = h3[0].getElementsByTagName("A");
+	
 	title[0].style.color="#FF0000";
 	```
 * Change page background color to green
 	```
 	var h = document.getElementsByTagName('*');
+	
 	for(var i = 0; i<h.length; i++){
 		h[i].style.backgroundColor="green";
 	}
@@ -61,12 +65,15 @@
 * Hide opinion column
 	```
 	var c = document.getElementsByClassName("f141");
+	
 	c[0].style.display="none";
 	```
 * Make top Ad banner sticky at the bottom
 	```
 	var ad = document.getElementsByClassName("hide-ad");
+	
 	ad[0].style.position='absolute';
+	
 	ad[0].style.bottom='0px';
 	```
 
