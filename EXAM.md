@@ -205,11 +205,67 @@ For some unknown reason, the top Ad banner is wrapped in a __div__ with a unique
     document.querySelector(".hide-ad").style.bottom = "0";
 
 
+
 ### 3. DOM Manipulation with Javascript
 
 * Add a 10px red border around all __IMG__ elements 
+
+The easiest way to affect all elements is with CSS, so I got tired of iterating:
+
+    var style = document.createElement("style");
+    style.type = "text/css";
+    style.innerHTML = "img {border: 10px solid red;}";
+        
+    document.getElementsByTagName("head")[0].appendChild(style);
+
+
 * Fade out all __IMG__ elements
+
+The same as before (fade out created via CSS):
+
+    var style = document.createElement("style");
+    style.type = "text/css";
+    style.innerHTML = "img {\
+                           animation-duration: 6s;\
+                           animation-name: fadeout;\
+                       }\
+                       @keyframes fadeout {\
+                           from {\
+                               opacity: 1;\
+                           }\
+                         \
+                           to {\
+                               opacity: 0;\
+                           }\
+                       }\
+    ";
+        
+    document.getElementsByTagName("head")[0].appendChild(style);
+
 * Add a 10px red border around all __IMG__ and fade out the images after 3 seconds
+
+And the same as before:
+
+    var style = document.createElement("style");
+    style.type = "text/css";
+    style.innerHTML = "img {\
+                           animation-duration: 6s;\
+                           animation-name: fadeout;\
+                           animation-delay: 3s;\
+                           border: 10px solid red;\
+                       }\
+                       @keyframes fadeout {\
+                           from {\
+                               opacity: 1;\
+                           }\
+                         \
+                           to {\
+                               opacity: 0;\
+                           }\
+                       }\
+    ";
+        
+    document.getElementsByTagName("head")[0].appendChild(style);
 
 ### 4. Answer the following points
 
