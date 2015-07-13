@@ -53,10 +53,6 @@
 			}
 		}
 	}
-	
-	for(var i = 0; i<matchingResults.length; i++){
-		console.log(matchingResults[i]);
-	}
 	```
 
 ### 2. Apply CSS to DOM
