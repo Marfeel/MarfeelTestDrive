@@ -36,7 +36,21 @@
 	var articles = document.getElementsByClassName("article");
 	```
 * Select all _article_ from the middle and right column, but not from the left column
+	```
+	Due to web structure, I haven't been able to locate which middle and right columns you refer to.
+	```
 * Select the 4th and 5th _article_ from the left column
+	```
+	var section = document.getElementsByClassName("opening-1-left");
+	var div = section[0].getElementsByTagName("DIV");
+	var articles = div[0].getElementsByTagName("ARTICLE");
+	
+	var fourthArt = articles[3];
+	var fifthArt = articles[4];
+	
+	console.log(fourthArt);
+	console.log(fifthArt);
+	```
 * Select the logo of the website
 	```
 	var logo = document.getElementsByClassName("header-logo-h");
@@ -163,13 +177,13 @@
 
 * Explain the difference between position static, relative, absolute and fixed : __Static:__ Is the predetermined position which browsers use. __Relative:__ Positioning a box according to the static position and then move it from their original position. __Absolute:__ The position is established absolutely regarding its container element, and the other elements of the page ignore the new position of the element. __Fixed:__ Absolute positioning variant that turns a box into an immovable element; its position on the screen it's always the same.
 
-* What are data SRCs? When would you use them?
+* What are data SRCs? When would you use them? : 
 
 * What benefits you get by using a CSS preprocessor? : Nested syntax, you can define variables and mixins, use mathematical and operational functions, you can join multiple files.
 
-* Why would you use unit testing?
+* Why would you use unit testing? : Because it's easier to find errors on the code and it's faster to solve. It's one of the easiests ways to test software.
 
-* How would you accelerate an element by hardware and why?
+* How would you accelerate an element by hardware and why? : Having a computer which has a good GPU because it can perform faster an element which has animations. 
 
 
 
