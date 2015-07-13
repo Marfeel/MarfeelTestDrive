@@ -155,11 +155,55 @@ I like this way of writing code because it's quite self-explanatory: " _we filte
 
 ### 2. Apply CSS to DOM
 
-* Change the main article title to FF0000
+By "Apply CSS to DOM" I assume we are talking applying it with JS (since the position is _JS ninja_), and not superseding it with another stylesheet called later.
+
+Since this section is mostly modifying the styles of the elements, I'll mostly use the ```element.style``` property.
+
+* Change the main article header to FF0000
+
+The main article is surrounded by tons of nested divs, but the one with the most semantic class to select would be ```special-top```. Then inside this ```div``` we find the headers, and the _jumbo_ header is not an ```h1``` as we could have guessed, but an ```h3``` (and the subheaders just under it, are ```h2```...). There are other ```h3``` inside ```special-top```, so we have to increase the specificity of our selection, in this case by getting a div with class ```art-info-complete``` (incredibly ad-hoc solution, if the programmers had used an ```h1``` as logic dictates, it would be quite easier). And empirically tested it needs even more specificity (in this case, the ```a```), so it ends up something like:
+
+    document.querySelector(".special-top .art-info-complete h3>a").style.color = "#FF0000";
+
 * Change page background color to green
-* Change subtitles to lowercase
+
+This should be easy:
+
+    document.body.style.backgroundColor = "green";
+    
+As it was expected, nothing works as it should (go ahead, try it), so to make it easy and fast (to write, not to process), let's go the overkill way and change **all** the backgrounds to _green_ .
+
+    [].slice.call(document.querySelectorAll("*")).forEach(function(a){a.style.backgroundColor = "green"});
+
+* Change subheaders to lowercase
+
+Since, in the current implementation of the site, there are no subhaders (the only thing that look like subheaders are actually links to related articles, used to contextualize the current article), it's nearly impossible to solve this exercise.
+
+However, if by "subheaders" you mean any _h*_ that is not actually an __H1__ (so: __H2__, __H3__, __H4__, __H5__ and __H6__), then:
+
+    [].slice.call(document.querySelectorAll("h2,h3,h4,h5,h6")).forEach(function(a){a.style.textTransform = "lowercase";});
+
+Actually, following the same pattern, we only need to query the correct selector, so the function would be the same, just changing the selector ```"h2,h3,h4,h5,h6"``` to whatever selector defines the subheaders.
+
 * Hide opinion column
+
+It's currently defined by the unique class ```border-sides-blog```, so:
+
+    document.querySelector(".border-sides-blog").style.visibility = "hidden";
+
+However, I like it more when the thing I hide disappear completely, even if it's not strictly _hide_ as the exercise proposes:
+
+
+    document.querySelector(".border-sides-blog").style.display = "none";
+
+
 * Make top Ad banner sticky at the bottom
+
+For some unknown reason, the top Ad banner is wrapped in a __div__ with a unique class ```hide-ad```, so I'll use that to change its position to a fixed and then move it to the bottom.
+
+    document.querySelector(".hide-ad").style.position = "fixed";
+    document.querySelector(".hide-ad").style.bottom = "0";
+
 
 ### 3. DOM Manipulation with Javascript
 
