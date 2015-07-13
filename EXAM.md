@@ -59,6 +59,10 @@
 	```
 * Change subtitles to lowercase
 * Hide opinion column
+	```
+	var c = document.getElementsByClassName("f141");
+	c[0].style.display="none";
+	```
 * Make top Ad banner sticky at the bottom
 
 ### 3. DOM Manipulation with Javascript
