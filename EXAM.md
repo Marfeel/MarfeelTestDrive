@@ -1,11 +1,17 @@
 ### 1. Get DOM elements using Javascript selectors
 
-* Select an __IMG__ element --> var img = document.getElementsByTagName("IMG")[0]; console.log(img);
-* Select all __H2__ elements --> var h2 = document.getElementsByTagName("H2");
+* Select an __IMG__ element
+	```var img = document.getElementsByTagName("IMG")[0]; console.log(img);```
+* Select all __H2__ elements
+        ```
+        var h2 = document.getElementsByTagName("H2");
 	for(var i = 0; i<h2.length; i++){
 		console.log(h2[i]);
 	}
-* Select all __A__ elements that have the attribute _title_ --> var a = document.getElementsByTagName("A");
+	```
+* Select all __A__ elements that have the attribute _title_
+	```
+	var a = document.getElementsByTagName("A");
 	var matchingResults = [];
 	for(var i = 0; i<a.length; i++){
 		 if (a[i].getAttribute('title') !== null){
@@ -15,7 +21,22 @@
 	for(var i = 0; i<matchingResults.length; i++){
 		console.log(matchingResults[i]);
 	}
+	```
 * Select only the __IMG__ elements that are inside an __A__ element
+ 	```
+ 	var a = document.getElementsByTagName("A");
+	var imgs = [];
+	
+	for(var i = 0; i<a.length; i++){
+		if(a[i].getElementsByTagName("IMG").length != 0){
+			imgs.push(a[i].getElementsByTagName("IMG"));
+		}
+	}
+	
+	for(var i = 0; i<imgs.length; i++){
+		console.log(imgs[i][0]);
+	}
+ 	```
 * Select all elements with class _article_
 * Select all _article_ from the middle and right column, but not from the left column
 * Select the 4th and 5th _article_ from the left column
