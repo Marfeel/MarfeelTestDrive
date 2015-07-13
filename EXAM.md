@@ -51,6 +51,10 @@
 	title[0].style.color="#FF0000";
 	```
 * Change page background color to green
+	```
+	var h = document.getElementsByTagName('*');
+	h[0].style.backgroundColor="green";
+	```
 * Change subtitles to lowercase
 * Hide opinion column
 * Make top Ad banner sticky at the bottom
