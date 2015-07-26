@@ -1,0 +1,141 @@
+//1
+//Select an IMG element
+document.getElementsByTagName('img')[0]; //or
+document.querySelector('img');
+
+//Select all H2 elements
+document.getElementsByTagName('h2');
+
+//Select all A elements that have the attribute title
+
+var elem = document.getElementsByTagName('a');
+var titles = new Array();
+var j = 0;
+for(var i=0; i<elem.length; i++){
+	if(elem[i].hasAttribute('title')){
+		titles[j] = elem[i];
+		j++;
+	}
+}
+console.log(elem);
+
+//Select only the IMG elements that are inside an A element
+document.querySelectorAll("a img");
+
+
+//Select all elements with class article
+//If there is <div class="article"> in the web site then:
+document.getElementsByClassName('article');
+//For site www.elconfidencial.com I use getElementsByTagName because there are tags <article></article>
+document.getElementsByTagName('article');
+
+//Select all article from the middle and right column, but not from the left column
+//For site www.elconfidencial.com I use:
+document.querySelectorAll('.opening-1-right-bottom article');
+//because there are 2 colums and class="opening-1-right-bottom" include middle and right columns
+
+//Select the 4th and 5th article from the left column
+document.querySelector('.opening-1-left article:nth-child(4)');
+document.querySelector('.opening-1-left article:nth-child(5)');
+
+//Select the logo of the website
+document.getElementsByClassName('header-fixed-logo-link')[0]; //or
+document.querySelector('.header-fixed-logo-link');
+
+//Select all IMG elements whose SRC attribute is a JPG file
+//As not all images end .jpg, but in .jpg?mtime=..., so I can't ro use only selector:
+document.querySelector('img[src$=".jpg"]');
+
+//but that
+var elem = document.getElementsByTagName('img');
+var srcimg;
+var j = 0;
+var jpg = new Array();
+
+for(var i=0; i<elem.length; i++){
+    srcimg = elem[i].getAttribute('src');
+    if(srcimg.match(/.jpg/)){
+        jpg[j] = elem[i];
+        j++;
+    }
+}
+
+
+//2
+
+//Change the main article title to FF0000
+document.querySelector('.art-tit a').style.color = "#FF0000";
+
+//Change page background color to green
+document.body.style.backgroundColor = "green"; //or
+
+//Change subtitles to lowercase
+document.querySelector('.tit-sec-name').style.textTransform = 'lowercase';
+
+//Hide opinion column
+document.getElementsByClassName('opening-1-right-bottom-right')[0].style.display = 'none'
+
+//Make top Ad banner sticky at the bottom
+document.querySelector('.hide-ad').style.position = 'fixed';
+document.querySelector('.hide-ad').style.bottom = '0';
+
+//3
+//Add a 10px red border around all IMG elements 
+var img =  document.getElementsByTagName("img");
+for (var i = 0; i < img.length; i++) {
+		img[i].style.border = "10px solid red"; 
+}
+
+//Fade out all IMG elements
+var img =  document.getElementsByTagName("img");
+for (var i = 0; i < img.length; i++) {
+	img[i].style.opacity = '-1';
+}
+
+//Add a 10px red border around all IMG and fade out the images after 3 seconds
+var img =  document.getElementsByTagName("img");
+for (var i = 0; i < img.length; i++) {
+		img[i].style.border = "10px solid red"; 
+}
+function FadeOutImg(){
+	var img =  document.getElementsByTagName("img");
+	for (var i = 0; i < img.length; i++) {
+		img[i].style.opacity = '-1';
+	}
+}	
+setTimeout(FadeOutImg, 3000);
+
+//4
+Justify the chosen method used to hide opinion column
+I changed the property display because there is no influence on the position of other content.
+
+Explain the difference between position static, relative, absolute and fixed
+Absolute position of the element is defined by properties left, top, right и bottom also on the position affects 
+value of the position of the parent element. For example, if the parent value of position is set as static or parent is not present, then the countdown origin is from the edge of the browser window. If a parent value of position is set to fixed, relative or absolute, the countdown origin is from the edge of the parent element.
+
+Fixed, by its action, is close to absolute, but unlike him, is bound to the specified properties left, top, right, and bottom point on the screen and does not change its position when scrolling web page.
+
+Relative. The item's position relative to its original location. Adding properties left, top, right, and bottom position of the element changes and shifts it in either direction from the original location.
+
+Static. The elements are displayed as usual. Using the properties left, top, right, and bottom does not lead to any results.
+
+What are data SRCs? When would you use them?
+Src is on of the attribute de tegs of HTML which is written path to the file.
+Attribute src use in the tag script:
+<script src="URL">...</script>
+Import the file with scripts from an external file. Script files JavaScript usually have expansion .js and can be placed in any accessible location.
+
+What benefits you get by using a CSS preprocessor?
+Firstly, they do not require browser compatibility, LESS, Sass and Stylus(most popular preprocessors) generate valid CSS code. Another important advantage is that preprocessors do our CSS cleaner and more logical. They allow us to create a variable and re-use the properties of CSS, which makes our code more modular and scalable. Thus, when increasing the size of our code is not out of control and will not be difficult to manage.
+Why would you use unit testing?
+I will use unit testing for test code on the early stage. It helps identify errors early when the project is big.  
+
+How would you accelerate an element by hardware and why?
+Under hardware acceleration understood transposition regarding operations from the CPU to GPU, which, unlike the x86 CPU, adapted for specific computation. 
+The general scheme is that your document is broken down into multiple "layers" which are invariant to the aspects of your page that are accelerated. These layers are rendered using the traditional render pipeline.
+These aspects of your document can be accelerated by the GPU:
+•	General layout compositing
+•	CSS3 transitions
+•	CSS3 3D transforms
+•	Canvas Drawing
+•	WebGL 3D Drawing
