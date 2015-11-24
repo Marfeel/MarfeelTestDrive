@@ -52,6 +52,12 @@ var banner = document.querySelector('.hide-ad').style.cssText = css;
 ### 3. DOM Manipulation with Javascript
 
 * Add a 10px red border around all __IMG__ elements 
+var img = document.querySelectorAll('img');
+for(var i = 0; i < img.length; i = i + 1)
+{
+    img[i].style.border = 'solid 10px red';
+}
+
 * Fade out all __IMG__ elements
 * Add a 10px red border around all __IMG__ and fade out the images after 3 seconds
 
