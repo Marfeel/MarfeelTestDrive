@@ -16,6 +16,8 @@ document.querySelectorAll('a img');
 document.querySelectorAll('.article');
 
 * Select all _article_ from the middle and right column, but not from the left column
+// Didn't understand this quite good, because the middle column is with right class, but right column doesn't have articles
+
 * Select the 4th and 5th _article_ from the left column
 * Select the logo of the website
 * Select all __IMG__ elements whose _SRC_ attribute is a _JPG_ file
