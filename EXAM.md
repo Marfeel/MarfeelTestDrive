@@ -33,6 +33,8 @@ document.querySelectorAll('img[src*=".jpg"]');
 document.querySelector('.art-info-complete h3 a').style.color = "#FF0000";
 
 * Change page background color to green
+document.querySelector('body').style.background = "green";
+
 * Change subtitles to lowercase
 * Hide opinion column
 * Make top Ad banner sticky at the bottom
