@@ -92,6 +92,7 @@ absolute- it's positioned in relation to the first parent element it has that do
 fixed- element will stay fixed at the same place on screen even after scrolling
 
 * What are data SRCs? When would you use them?
+Attribute which helps bind data to element. I'd use it with buttons, tables and iframes.
 
 * What benefits you get by using a CSS preprocessor?
 
