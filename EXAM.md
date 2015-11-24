@@ -101,6 +101,7 @@ The biggest benefits are variables, functions and the readability of code.
 Because it's necesary if multiple people are working on the same project. After adding every feature it's possible to test everything, if it still works as it should be.
 
 * How would you accelerate an element by hardware and why?
+By moving element on z axis, so it turns on hardvare acceleration. I'd use it because it increases performance.
 
 
 
