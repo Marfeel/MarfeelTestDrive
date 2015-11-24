@@ -36,6 +36,12 @@ document.querySelector('.art-info-complete h3 a').style.color = "#FF0000";
 document.querySelector('body').style.background = "green";
 
 * Change subtitles to lowercase
+var subtitles = document.querySelectorAll('h4[subtitle]');
+for(var i = 0; i < subtitles.length; i = i + 1)
+{
+    subtitles[i].style.textTransform = 'lowercase';
+}
+
 * Hide opinion column
 * Make top Ad banner sticky at the bottom
 
