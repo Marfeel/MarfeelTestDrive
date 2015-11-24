@@ -95,6 +95,7 @@ fixed- element will stay fixed at the same place on screen even after scrolling
 Attribute which helps bind data to element. I'd use it with buttons, tables and iframes.
 
 * What benefits you get by using a CSS preprocessor?
+The biggest benefits are variables, functions and the readability of code.
 
 * Why would you use unit testing?
 
