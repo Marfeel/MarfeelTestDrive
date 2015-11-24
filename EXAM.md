@@ -66,6 +66,19 @@ for(var i = 0; i < img.length; i = i + 1)
 }
 
 * Add a 10px red border around all __IMG__ and fade out the images after 3 seconds
+var img = document.querySelectorAll('img');
+
+for(var i = 0; i < img.length; i = i + 1)
+{
+    img[i].style.border = 'solid 10px red';
+}
+
+setTimeout(function(){
+	for(var i = 0; i < img.length; i = i + 1)
+	{
+	    img[i].style.cssText = 'transition: opacity 1000ms;opacity: 0;';
+	}
+}, 3000);
 
 ### 4. Answer the following points
 
