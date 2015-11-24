@@ -25,6 +25,7 @@ document.querySelectorAll('[class$="1-left"] article:nth-child(n+4):nth-child(-n
 document.querySelector('.header-logo-h a');
 
 * Select all __IMG__ elements whose _SRC_ attribute is a _JPG_ file
+document.querySelectorAll('img[src*=".jpg"]');
 
 ### 2. Apply CSS to DOM
 
