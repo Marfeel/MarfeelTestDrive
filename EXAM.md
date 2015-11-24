@@ -13,6 +13,8 @@ document.querySelectorAll('a[title]');
 document.querySelectorAll('a img');
 
 * Select all elements with class _article_
+document.querySelectorAll('.article');
+
 * Select all _article_ from the middle and right column, but not from the left column
 * Select the 4th and 5th _article_ from the left column
 * Select the logo of the website
