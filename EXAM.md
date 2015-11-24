@@ -30,6 +30,8 @@ document.querySelectorAll('img[src*=".jpg"]');
 ### 2. Apply CSS to DOM
 
 * Change the main article title to FF0000
+document.querySelector('.art-info-complete h3 a').style.color = "#FF0000";
+
 * Change page background color to green
 * Change subtitles to lowercase
 * Hide opinion column
