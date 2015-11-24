@@ -59,6 +59,12 @@ for(var i = 0; i < img.length; i = i + 1)
 }
 
 * Fade out all __IMG__ elements
+var img = document.querySelectorAll('img');
+for(var i = 0; i < img.length; i = i + 1)
+{
+    img[i].style.cssText = 'transition: opacity 500ms;opacity: 0;';
+}
+
 * Add a 10px red border around all __IMG__ and fade out the images after 3 seconds
 
 ### 4. Answer the following points
