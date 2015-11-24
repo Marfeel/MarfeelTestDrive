@@ -83,6 +83,7 @@ setTimeout(function(){
 ### 4. Answer the following points
 
 * Justify the chosen method used to hide opinion column
+It requires the least amount of code and it works as good as every other method.
 
 * Explain the difference between position static, relative, absolute and fixed
 
