@@ -46,6 +46,8 @@ for(var i = 0; i < subtitles.length; i = i + 1)
 document.querySelector('.opinion').style.display = 'none';
 
 * Make top Ad banner sticky at the bottom
+var css = 'position:fixed;bottom:0px;'
+var banner = document.querySelector('.hide-ad').style.cssText = css;
 
 ### 3. DOM Manipulation with Javascript
 
