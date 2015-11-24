@@ -19,6 +19,8 @@ document.querySelectorAll('.article');
 // Didn't understand this quite good, because the middle column is with right class, but right column doesn't have articles
 
 * Select the 4th and 5th _article_ from the left column
+document.querySelectorAll('[class$="1-left"] article:nth-child(n+4):nth-child(-n+5)');
+
 * Select the logo of the website
 * Select all __IMG__ elements whose _SRC_ attribute is a _JPG_ file
 
