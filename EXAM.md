@@ -86,6 +86,10 @@ setTimeout(function(){
 It requires the least amount of code and it works as good as every other method.
 
 * Explain the difference between position static, relative, absolute and fixed
+static- this is the default and it's positioned to place where it would go normally without defining position
+relative- element is moved relative to where it would have landed if it just had the default static positioning
+absolute- it's positioned in relation to the first parent element it has that doesn't have position: static
+fixed- element will stay fixed at the same place on screen even after scrolling
 
 * What are data SRCs? When would you use them?
 
