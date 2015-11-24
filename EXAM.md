@@ -98,6 +98,7 @@ Attribute which helps bind data to element. I'd use it with buttons, tables and 
 The biggest benefits are variables, functions and the readability of code.
 
 * Why would you use unit testing?
+Because it's necesary if multiple people are working on the same project. After adding every feature it's possible to test everything, if it still works as it should be.
 
 * How would you accelerate an element by hardware and why?
 
